@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #f0f8ff; /* Azul claro */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra todo el contenido */
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding-top: 60px; /* Espacio para el header */
+    margin: 0;
+}
+
+/* Header */
+header {
+    width: 100%;
+    background-color: #005f99;
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Contenedor principal */
+.container {
+    width: 100%;
+    max-width: 900px; /* Ancho máximo para los formularios y contenido */
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 80px; /* Espacio para el header fijo */
+}
+
+/* Heading */
+h2 {
+    color: #005f99;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+/* Form styles */
+.form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #005f99;
+}
+
+.form input[type="text"],
+.form input[type="password"],
+.form input[type="date"],
+.form input[type="time"],
+.form textarea,
+.form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+.form textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #005f99; /* Azul oscuro */
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #0077b6; /* Azul medio */
+}
+
+button[type="submit"] {
+    width: 100%;
+    margin-top: 15px;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #cccccc;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #005f99;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(even) td {
+    background-color: #e6f2ff; /* Muy claro */
+}
+
+/* Nav buttons in dashboard */
+nav a {
+    display: inline-block;
+    margin: 10px 5px;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #005f99;
+    color: white;
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* Asegura que todo el contenido esté bien centrado */
+body > .container {
+    max-width: 800px; /* Limita el ancho en páginas de formulario */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+/* Ajustes adicionales para mejorar la experiencia de usuario */
+a {
+    color: #005f99;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos de los enlaces en el header */
+header nav a {
+    font-size: 1.2em;
+}
